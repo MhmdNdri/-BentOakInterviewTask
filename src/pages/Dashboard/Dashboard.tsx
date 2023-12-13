@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Tab, Tabs } from '@mui/material'
 import { useQueryClient } from 'react-query'
 import Products from './components/Products'
-
+import Charts from './components/Charts'
 interface DashboardProps {
   onLogout: () => void
 }
@@ -50,7 +50,9 @@ export const Dashboard: React.FC<DashboardProps> = ({ onLogout }) => {
         }}
       >
         <div role="tabpanel" hidden={value !== 'charts'}>
-          <p>Charts Content</p>
+          <p>
+            <Charts />
+          </p>
         </div>
         <div role="tabpanel" hidden={value !== 'products'}>
           <Products />
