@@ -1,7 +1,6 @@
 import React from 'react'
 import { LoginForm } from '@/buildings/components'
 import { Container, CssBaseline, Typography, Link, Stack } from '@mui/material'
-import Box from '@mui/system/Box'
 
 interface LoginPageProps {
   onLogin: () => void
